@@ -1,0 +1,11 @@
+.answer {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+}
+canvas {
+	border: 1px solid red;
+	margin: 0 auto;
+	display: block;
+}
