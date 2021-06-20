@@ -1,16 +1,16 @@
-export default class Canvas {
+export default class CanvasGraph {
 	constructor({
 		canvasId, 
 		width = 500, 
 		heigth = 500, 
-		context='2d'
+		context = '2d'
 	}) {
 		let canvas = document.getElementById(canvasId);
 		canvas.setAttribute('width', width);
 		canvas.setAttribute('height', heigth);
 		
 		this.width = width;
-		this.heigth = heigth;
+		this.height = heigth;
 		this.c = canvas.getContext(context);
 		this.c.lineWidth = 1;
 	}
@@ -37,7 +37,7 @@ export default class Canvas {
 		this.c.stroke();
 	}
 
-	clearCanvas() {
+	clear() {
 		this.c.clearRect(0, 0, this.width, this.height);
 	}
 }

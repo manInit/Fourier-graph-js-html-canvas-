@@ -19,7 +19,7 @@ export default class Fourier {
 		return x => {
 			let a0 = Fourier._getA0(f);
 			let res = a0 / 2;
-			for(i = 1; i < k; i++) {
+			for(let i = 1; i < k; i++) {
 				res += Fourier._getAk(f, i) * Math.cos(x * i) + Fourier._getBk(f, i) * Math.sin(i * x);
 			}
 			return res;
