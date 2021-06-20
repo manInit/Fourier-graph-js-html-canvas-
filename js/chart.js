@@ -1,4 +1,4 @@
-let canvas = document.getElementsByClassName('graphFourier')[0];
+let canvas = document.getElementById('mainCanva');
 
 canvas.setAttribute('width', 500);
 canvas.setAttribute('height', 500);

@@ -6,11 +6,14 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div class="answer"></div>
-	<canvas class="graphFourier"></canvas>
-	<input type="text" id="form">
-	<button id="start">Старт</button>
-	<button id="stop">Стоп</button>
+	<main>
+		<canvas id="mainCanva" class="graphFourier"></canvas>
+		<div class="controls">
+			<button class="controls__btn" id="start">Старт</button>
+			<button class="controls__btn" id="stop">Стоп</button>		
+		</div>
+	</main>
+	
 	<script src="js/chart.js"></script>
 	<script src="js/furier.js"></script>
 	<script src="js/main.js"></script>
